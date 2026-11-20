@@ -1,6 +1,6 @@
 import React from 'react';
 import YoutubeIcon from './YoutubeIcon';
-import { Layers, Heart, Shield } from 'lucide-react';
+import { Layers, Heart, Shield, Coffee } from 'lucide-react';
 
 export default function Footer({ onOpenSupport, onOpenPrivacy }) {
   return (
@@ -16,6 +16,16 @@ export default function Footer({ onOpenSupport, onOpenPrivacy }) {
 
         {/* Links */}
         <div className="flex flex-wrap items-center justify-center gap-4 text-xs">
+          <a
+            href="https://ko-fi.com/dimiboy/shop"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-emerald-400 transition-colors flex items-center gap-1"
+          >
+            <Coffee className="w-3.5 h-3.5 text-emerald-400" />
+            <span>Ko-fi Shop</span>
+          </a>
+
           <a
             href="https://thumbsplit.dimustech.net"
             target="_blank"

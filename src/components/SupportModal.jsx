@@ -44,6 +44,40 @@ export default function SupportModal({ isOpen, onClose }) {
 
         {/* Payment Methods */}
         <div className="space-y-4">
+          {/* Ko-fi Shop & Tips */}
+          <div className="bg-slate-950/80 border border-slate-800 rounded-xl p-4">
+            <div className="flex items-center justify-between gap-3 mb-2">
+              <div className="flex items-center gap-2">
+                <Coffee className="w-4 h-4 text-emerald-400" />
+                <span className="text-sm font-semibold text-slate-200">Ko-fi • חנות וטיפים</span>
+              </div>
+              <span className="text-[11px] text-slate-500" dir="ltr">ko-fi.com/dimiboy</span>
+            </div>
+            <p className="text-[11px] text-slate-400 mb-3">
+              רכישת ערכות קוד מוכנות (Docker / Sentinel) או תמיכה בכוס קפה
+            </p>
+            <div className="grid grid-cols-2 gap-2">
+              <a
+                href="https://ko-fi.com/dimiboy/shop"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold py-2 px-3 rounded-lg transition-colors shadow-sm"
+              >
+                <span>ביקור בחנות</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+              <a
+                href="https://ko-fi.com/dimiboy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-1.5 bg-[#FF5E5B] hover:bg-[#e04f4c] text-white text-xs font-semibold py-2 px-3 rounded-lg transition-colors shadow-sm"
+              >
+                <span>הזמנת קפה</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+            </div>
+          </div>
+
           {/* PayPal */}
           <div className="bg-slate-950/80 border border-slate-800 rounded-xl p-4">
             <div className="flex items-center justify-between gap-3 mb-2">
