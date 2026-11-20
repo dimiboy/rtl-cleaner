@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://rtl-cleaner.pages.dev/sitemap.xml
+Sitemap: https://rtl.dimustech.net/sitemap.xml
