@@ -4,7 +4,6 @@ import React, { useEffect, useRef } from 'react';
  * Responsive Google AdSense Display Banner
  */
 export default function AdBanner({ slotId = '6234153621', className = '' }) {
-  const adRef = useRef(null);
   const pushed = useRef(false);
 
   useEffect(() => {
@@ -25,7 +24,7 @@ export default function AdBanner({ slotId = '6234153621', className = '' }) {
         <div className="text-[10px] uppercase tracking-wider text-slate-500 font-medium mb-2 select-none">
           Advertisement
         </div>
-        <div ref={adRef} className="min-h-[90px] flex items-center justify-center">
+        <div className="min-h-[90px] flex items-center justify-center">
           <ins
             className="adsbygoogle"
             style={{ display: 'block', width: '100%', minHeight: '90px' }}
